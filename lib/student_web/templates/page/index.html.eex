@@ -1,38 +1,38 @@
-<section class="phx-hero">
-  <h1><%= gettext "Welcome to %{name}!", name: "Phoenix" %></h1>
-  <p>Peace of mind from prototype to production</p>
-</section>
+<div class="phx-hero">
+  <h2>Hello Student of Hogwarts!</h2>
+</div>
 
-<section class="row">
-  <article class="column">
-    <h2>Resources</h2>
-    <ul>
-      <li>
-        <a href="https://hexdocs.pm/phoenix/overview.html">Guides &amp; Docs</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix">Source</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix/blob/v1.5/CHANGELOG.md">v1.5 Changelog</a>
-      </li>
-    </ul>
-  </article>
-  <article class="column">
-    <h2>Help</h2>
-    <ul>
-      <li>
-        <a href="https://elixirforum.com/c/phoenix-forum">Forum</a>
-      </li>
-      <li>
-        <a href="https://webchat.freenode.net/?channels=elixir-lang">#elixir-lang on Freenode IRC</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/elixirphoenix">Twitter @elixirphoenix</a>
-      </li>
-      <li>
-        <a href="https://elixir-slackin.herokuapp.com/">Elixir on Slack</a>
-      </li>
-    </ul>
-  </article>
-</section>
+
+
+<form action="/student" method="post">
+    <input type="hidden" name="_csrf_token" value="<%= @csrf %>">
+
+  <fieldset class="form-group">
+    <legend>Sign up</legend>
+
+    <label for="first_name">Firstname</label>
+    <input type="text" name="first_name" id="first_name" required>
+    <br>
+
+    <label for="last_name">Lastname</label>
+    <input type="text" name="last_name" id="last_name">
+    <br>
+    
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" required>
+    <br>
+
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" min="7" required>
+    <br>
+
+    <label for="course_of_study">Course of study</label>
+    <input type="text" id="course_of_study" name="course_of_study" required>
+    <br>
+
+    <input type="submit" value="Save">
+
+  </fieldset>
+  </form>
+
+

@@ -2,6 +2,11 @@ defmodule StudentWeb.HelloController do
   use StudentWeb, :controller
 
   def index(conn, _params) do
-    render(conn, "index.html")
+    #Student.StudentManager.create_new_user
+    Student.StudentManager.destroy_all_users
+    conn
   end
+
+
+
 end
