@@ -1,10 +1,10 @@
 defmodule StudentWeb.StudentController do
   use StudentWeb, :controller
 
+
   def index(conn, _params) do
-    student = Student.Student |> Student.Repo.all
-    render(conn, "index.html", students: student)
-    conn
+    results = Student.Student |> Student.Repo.all
+    render(conn, "index.html", students: results)
   end
 
   def new(conn, student) do
@@ -17,7 +17,8 @@ defmodule StudentWeb.StudentController do
     }
 
     Student.Repo.insert(student)
-    render(conn, "index.html")
+    render(conn, "new.html")
   end
+
 
 end

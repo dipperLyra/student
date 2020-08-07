@@ -18,7 +18,7 @@ defmodule StudentWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
-    get "/hello", HelloController, :index
+    get "/student", StudentController, :index
     post "/student", StudentController, :new
   end
 

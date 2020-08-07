@@ -1,5 +1,16 @@
-<div class="phx-hero">
-  <h2>Hello Student, from Hogwarts!</h2>
-</div>
-
-<p>You have successfully signed up</p>
+  <table>
+    <thead>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Course of Study</th>
+    </thead>
+    <tbody>
+      <%= for student <- @students do %>
+        <tr>
+          <td><%= student.first_name %> </td>
+          <td><%= student.last_name %></td>
+          <td><%= student.course_of_study %></td>
+        </tr>
+      <% end %>  
+    </tbody>
+  </table>

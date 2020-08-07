@@ -2,7 +2,9 @@
   <h2>Hello Student of Hogwarts!</h2>
 </div>
 
-
+<div>
+  <button type="button" onClick="list_students()" class="list_student">List Students</button>
+</div>
 
 <form action="/student" method="post">
     <input type="hidden" name="_csrf_token" value="<%= @csrf %>">
@@ -33,6 +35,5 @@
     <input type="submit" value="Save">
 
   </fieldset>
-  </form>
-
+</form>
 

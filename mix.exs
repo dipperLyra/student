@@ -43,6 +43,7 @@ defmodule Student.MixProject do
       {:telemetry_metrics, "~> 0.4"},
       {:telemetry_poller, "~> 0.4"},
       {:gettext, "~> 0.11"},
+      {:json, "~> 1.2"},
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"}
     ]
