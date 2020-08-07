@@ -19,6 +19,7 @@ defmodule StudentWeb.Router do
 
     get "/", PageController, :index
     get "/student", StudentController, :index
+    get "/student/1", StudentController, :show
     post "/student", StudentController, :new
   end
 
