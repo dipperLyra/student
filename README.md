@@ -1,4 +1,5 @@
 # Student
+A simple CRUD application to get familiar with Elixir, Phoenix and Erlang
 
 To start your Phoenix server:
 

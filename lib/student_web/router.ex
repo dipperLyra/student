@@ -21,6 +21,8 @@ defmodule StudentWeb.Router do
     get "/student", StudentController, :index
     get "/student/1", StudentController, :show
     post "/student", StudentController, :new
+    put "/student", StudentController, :update
+    delete "/student", StudentController, :delete
   end
 
   # Other scopes may use custom stacks.

@@ -1,10 +1,8 @@
-<div class="phx-hero">
-  <h2>Hello Student, from Hogwarts!</h2>
-</div>
-
 <form action="/student" method="post">
+    <input type="hidden" name="_csrf_token" value="<%= @csrf %>">
+
   <fieldset class="form-group">
-    <legend>Sign up</legend>
+    <legend>Edit Profile</legend>
 
     <label for="first_name">Firstname</label>
     <input type="text" name="first_name" id="first_name" required>
@@ -13,13 +11,9 @@
     <label for="last_name">Lastname</label>
     <input type="text" name="last_name" id="last_name">
     <br>
-    
+
     <label for="email">Email</label>
     <input type="email" name="email" id="email" required>
-    <br>
-
-    <label for="password">Password</label>
-    <input type="password" name="password" id="password" min="7" required>
     <br>
 
     <label for="course_of_study">Course of study</label>
@@ -29,8 +23,4 @@
     <input type="submit" value="Save">
 
   </fieldset>
-</form>
-
-<form action="/student" method="get">
-<input type="button" value="view all students">
 </form>

@@ -1,15 +1,14 @@
-
-  <table>
-    <thead>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Course of Study</th>
-    </thead>
-    <tbody>
-        <tr>
-            <%= for student <- @student_details do %>
-                <td><%= student %></td>
-            <% end %>
-        </tr>
-    </tbody>
-  </table>
+<table>
+  <thead>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Course of Study</th>
+  </thead>
+  <tbody>
+      <tr>
+          <%= for student <- @student_details do %>
+              <td><%= student %></td>
+          <% end %>
+      </tr>
+  </tbody>
+</table>

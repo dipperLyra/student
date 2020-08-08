@@ -1,4 +1,8 @@
 defmodule Student.Student do
+  @moduledoc """
+  This module defines the Student model schema and
+  defines changeset properties for validation
+  """
   use Ecto.Schema
   import Ecto.Changeset
 
@@ -12,6 +16,10 @@ defmodule Student.Student do
     timestamps()
   end
 
+  @spec changeset(
+          {map, map} | %{:__struct__ => atom | %{__changeset__: map}, optional(atom) => any},
+          :invalid | %{optional(:__struct__) => none, optional(atom | binary) => any}
+        ) :: Ecto.Changeset.t()
   @doc false
   def changeset(student, attrs) do
     student

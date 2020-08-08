@@ -3,7 +3,7 @@
 </div>
 
 <div>
-  <button type="button" onClick="list_students()" class="list_student">List Students</button>
+  <button type="button" onClick="listStudents()" class="list_student">List Students</button>
 </div>
 
 <form action="/student" method="post">
@@ -19,7 +19,7 @@
     <label for="last_name">Lastname</label>
     <input type="text" name="last_name" id="last_name">
     <br>
-    
+
     <label for="email">Email</label>
     <input type="email" name="email" id="email" required>
     <br>
@@ -36,4 +36,3 @@
 
   </fieldset>
 </form>
-
